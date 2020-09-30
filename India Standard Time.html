@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<body bgcolor="sky blue">
+<h1><center>India Time Viewer</center></h1>
+<style type="text/css">
+	h1  {
+		font-family: century gothic;
+		color: white;
+	}
+	body {
+		opacity: 0.8;
+	}
+	button {
+		font-family: century gothic;
+		border:2px;
+		padding: 5px 10px;
+		font-size: 110%;
+	 }
+	button:hover {
+		background-color: white;
+	}
+	p {
+		font-family: century gothic;
+		padding-top: 220px;
+		font-size: 30px;
+	}
+</style>
+<center><button id="button">
+try it</button>
+<p id="shruti"></p>
+<script>
+document.getElementById("button").addEventListener("click", displayDate);
+function displayDate() {
+  document.getElementById("shruti").innerHTML = Date();
+}
+</script></center>
+<p>Copyrights : Mudit Web Workers</p>
+</body>
+</html> 
