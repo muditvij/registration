@@ -1,0 +1,54 @@
+<html>
+<head>
+<title> Registration Form </title>
+</head>
+<body bgcolor="yellow and green">
+	<center>
+	<H1> <center><U>S.S. PUBLIC SCHOOL </center></H1></body></U>
+	<center><h2> Trusted School of Agra at Shahganj</h2></center>
+	<h1><u> Registration form for class IX</u> </h1>
+	<h2><u>Personal details</u></h2>
+	<script type="text/javascript">
+		function validateForm() {
+  var x = document.forms["myForm"]["firstname"]["lastname"]["address"]["password"]["number"]["email"].value;
+  if (x == "") {
+    alert("Name must be filled out");
+    return false;
+  }
+}
+	</script>
+<form name="myForm" onsubmit="return validateform()">
+First name <input type="text" placeholder="enter name" name="firstname"><br>
+last name <input type="text" placeholder="enter last name" name="lastname"><br>
+Address<input type="text" placeholder="type Address" name="address"><br>
+enter your password <input type="password" placeholder="enter password" name="password"><br>
+Mobile<input type="text" placeholder="enter mobile number" name="number"> <br>
+E-mail<input type="text" placeholder="type E-mail" name="email"><br>
+Select your Gender<input type="radio" name="gender" value="m">male
+<input type="radio" name="gender" value="f">female<br>
+</form>
+<h2><u>Education Details</u></h2>
+<form>
+	Mother name<input type="text" placeholder="Mother's name"><br>
+	Father Name<input type="text" placeholder="father's name"><br>
+	Previous School <input type="text" placeholder="Previous School"><br>
+	Your previous School medium<input type="radio" name="mudium">english
+	<input type="radio" name="mudium">hindi
+	<br>
+Area <input type="radio" name="area">urban
+<input type="radio" name="area">rural<br>
+<label for="cars">Household Income:</label>
+<select id="Household Income">
+  <option value="volvo">Less than 1,00,000</option>
+  <option value="saab">1,00,000-2,50,000</option>
+  <option value="opel">2,50,000-3,00,000</option>
+  <option value="audi">More Than 3,00,000</option>
+</select>
+</form>
+<button onclick="window.location.href = 'form fees.html';">Click Here</button>
+<P>* BY SUBMITTING FORM YOU ACCEPT OUR POLICY YOU HAVE TO COME AT ENTERENCE EXAM HALL.</P>
+<P>* WE WILL INFORM YOU ABOUT THE EXAM VENUE BY MESSAGE AND E-MAIL.</P>
+<p style="color: red;">By SS Public School</p>
+</center>
+</body>
+</html>
